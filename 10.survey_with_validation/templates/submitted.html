@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submitted Info</title>
+    <style>
+        .container {
+            width: 400px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        span {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Info</h1>
+        <p><span>Name:</span> {{ session['name'] }}</p>
+        <p><span>Email:</span> {{ session['email'] }}</p>
+        <p><span>Dojo Location:</span> {{ session['location'] }}</p>
+        <p><span>Favorite Language:</span> {{ session['fav_language'] }}</p>
+        <p><span>Comment:</span> {{ session['comment'] }}</p>
+    </div>
+</body>
+</html>
